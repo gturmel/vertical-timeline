@@ -12,47 +12,78 @@ nav {
 
 /*section. Having the ul wrapped in section means that I can set the
 padding/margin/whatever to hold all of the ul in to where I want it. Yessss*/
+section {
+  border: 1px solid red;
+}
 
-section.::before {
+
+section::before {
   content: '';
-
 }
 
 /* ul Styling */
 
 ul {
   width: 90%;
-  margin: 0 auto 0 auto;
-  padding: 0 2em 3em 2em;
+  margin: 0 0 0 0;
+  padding: 0 2em 3em 0;
   border: 1px solid green;
+  display: inline-block;
 }
 
 /* li styling */
 li {
-  background-color: lightblue;
+  background-color: #6cbfee;
   color: white;
-  radius: 5%;
+  border-radius: 5px;
+  margin-left: 25%;
+  padding: 1em;
+  position: relative;
+  display:inline-block;
+}
+
+header {
+  border-bottom: 0.5px solid white;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .datetime {
   display: block;
   border: 1px solid blue;
+  margin-left: 100px;
 }
 
 .datetime span:first-child{
   border: 1px solid red;
   font-size: .75em;
-  color: lightgrey;
+  color: #bdd0db;
+  text-align: right;
+  padding-left: 25px;
 }
 
 .datetime span:last-child {
   border: 1px dashed black;
   font-size: 1.5em;
-  color: lightblue;
+  color: #6cbfee;
+  text-align: right;
 }
 
 /* p styling */
 
 p {
-
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
+
+/*ul::before {*/
+  /*width: 10px;
+  content: '';
+  background-color: #afdcf8;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 10%;
+  position: absolute;
+
+}*/
