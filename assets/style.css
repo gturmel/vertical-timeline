@@ -3,15 +3,35 @@
 
 /* header styling */
 
+nav {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 3em 2em 3em 2em;
+  border: 1px solid green;
+}
+
+/*section. Having the ul wrapped in section means that I can set the
+padding/margin/whatever to hold all of the ul in to where I want it. Yessss*/
+
+section.::before {
+  content: '';
+
+}
+
 /* ul Styling */
 
 ul {
-
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 0 2em 3em 2em;
+  border: 1px solid green;
 }
 
 /* li styling */
 li {
-
+  background-color: lightblue;
+  color: white;
+  radius: 5%;
 }
 
 .datetime {
@@ -19,8 +39,16 @@ li {
   border: 1px solid blue;
 }
 
-.datetime span {
+.datetime span:first-child{
   border: 1px solid red;
+  font-size: .75em;
+  color: lightgrey;
+}
+
+.datetime span:last-child {
+  border: 1px dashed black;
+  font-size: 1.5em;
+  color: lightblue;
 }
 
 /* p styling */
