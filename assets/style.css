@@ -1,34 +1,39 @@
-
-/* body styling */
-
 /* header styling */
 
-nav {
+header {
   width: 90%;
   margin: 0 auto 0 auto;
-  padding: 3em 2em 3em 2em;
-  border: 1px solid green;
+  padding: 1em 2em 3em 2em;
+  color: #6cbfee;
 }
 
+h3, h1 {
+  text-align: center;
+}
+nav {
+  text-align: right;
+  float:right;
+}
 /*section. Having the ul wrapped in section means that I can set the
 padding/margin/whatever to hold all of the ul in to where I want it. Yessss*/
 section {
   border: 1px solid red;
+  background-color: blue;
+  margin: 0 0 5% 0;
+  padding: 0 5% 0 5%;
 }
 
 
-section::before {
-  content: '';
-}
 
 /* ul Styling */
 
 ul {
   width: 90%;
-  margin: 0 0 0 0;
+  margin: 0 0 0 2em;
   padding: 0 2em 3em 0;
   border: 1px solid green;
-  display: inline-block;
+  background-color: red;
+
 }
 
 /* li styling */
@@ -39,7 +44,6 @@ li {
   margin-left: 25%;
   padding: 1em;
   position: relative;
-  display:inline-block;
 }
 
 header {
@@ -49,9 +53,9 @@ header {
 }
 
 .datetime {
-  display: block;
+  /*display: block;*/
   border: 1px solid blue;
-  margin-left: 100px;
+  /*margin-left: 100px;*/
 }
 
 .datetime span:first-child{
