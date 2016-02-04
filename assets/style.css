@@ -120,3 +120,16 @@ p {
 }
 
 /* the triangle */
+
+p::after {
+  right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #3594cb;
+	border-width: 10px;
+	top: 10px;
+}
